@@ -29,7 +29,7 @@ class DatabaseManage(object):
         try:
             with con:
                 cur = con.cursor()
-                sql = "SELECT * FROM courses"
+                sql = "SELECT * FROM course"
                 cur.execute(sql)
                 return cur.fetchall()
         except Exception:
